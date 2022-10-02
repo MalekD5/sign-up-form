@@ -9,6 +9,6 @@ Credits:
 
 ## demo
 
-[click](malekd5.github.io/sign-up-form/) here to view a demo
+[click](https://malekd5.github.io/sign-up-form/) here to view a demo
 
 ![demo img](/.github/img.png)
