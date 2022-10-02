@@ -6,26 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign up form</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="main.js" defer></script>
   </head>
   <body>
-    <!-- <div class="img_main">
-      <div class="shadow_container">
-        <div class="logo_container">
-          <img src="./assests/imgs/odin-logo.png" />
-          <h1>MD5</h1>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-        <div class="quote-container">
-            <div class="quote">
-              <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ullam impedit officiis? Illo quae quo minus nisi enim nostrum illum explicabo saepe porro aliquid vero voluptas quam doloribus corrupti nobis, maiores commodi, fugiat nemo ipsa deserunt reiciendis, id inventore vel! <br /> <br />
-              You <em>know</em> you want to
-              </h5>
-            </div>
-        </div>
-    </div> -->
-
     <div class="flex-container">
       <div class="primary-container">
         <div class="blured-container">
@@ -37,6 +20,43 @@
         <div class="quote-container">
           
         </div>
+        <form>
+          <div class="form-container">
+        <p>Let's do this!</p>
+            <div class="form-label-container">
+              <div class="form-item">
+                <label>first name</label>
+                <input type="text" />
+              </div>
+              <div class="form-item">
+                <label>last name</label>
+                <input type="text" />
+              </div>
+              <div class="form-item">
+                <label>email</label>
+                <input type="email" />
+              </div>
+              <div class="form-item">
+                <label>phone number</label>
+                <input type="text" />
+              </div>
+              <div class="form-item">
+                <label>password</label>
+                <input id="pass1" type="password" required/>
+                <div id="error"></div>
+              </div>
+              <div class="form-item">
+                <label>confirm password</label>
+                <input id="pass2" type="password" required/>
+              </div>
+            </div>
+          </>
+          </div>
+          <div class="btn-section">
+            <button class="btn" id="submit" type="submit">Create Account</button>
+            <p class="login">have an account? <a href="#">Log in</a></p>
+          </div>
+        </form>
       </div>
     </div>
   </body>
