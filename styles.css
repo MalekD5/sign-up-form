@@ -93,6 +93,10 @@
     flex: 2 1 auto;
 }
 
+/* 
+    PRIMARY CONTAINER STUFF
+*/
+
 .primary-container {
     width: 35%;
     height: 100vh;
@@ -101,15 +105,9 @@
         background-size: auto 100vh;
 }
 
-.secondary-container {
-    width: 100%;
-    height: 100vh;
-    background-color: blue;
-}
-
 .blured-container {
     width: 100%;
-    height: 12rem;
+    height: 8rem;
     background-color: rgba(0, 0 , 0, .5);
     margin-top: 10rem;
     display: flex;
@@ -118,11 +116,30 @@
 }
 
 .blured-container > img {
-    width: 128px;
+    width: 90px;
 }
 
 .blured-container > h1 {
     font-family: 'norse', sans-serif;
-    font-size: 96px;
+    font-size: 70px;
     color: whitesmoke;
+}
+
+
+/*
+    SECONDARY CONTAINER STUFF
+*/
+
+.secondary-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.quote-container {
+    width: 100%;
+    height: 300px;
+    background-color: #ededed;
 }
