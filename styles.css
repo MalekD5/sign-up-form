@@ -1,0 +1,89 @@
+@font-face {
+    font-family: norse;
+    src: url('./assests/fonts/Norse-Bold.otf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --btn-color: #596D48;
+    --border: #E5E7EB;
+    --img-size: 387px;
+    font-family: sans-serif;
+}
+
+h1 {
+    font-family: 'norse', sans-serif;
+    font-size: 96px;
+    color: whitesmoke;
+}
+
+.img_main {
+    /* prevent magin-top (in shadow_container) from moving and leaving empty white space */
+    position: absolute;
+
+    /* prevent repeating of the background */
+    background-repeat: no-repeat;
+    background-image: url('./assests/imgs/main_img.avif');
+    
+    /* we defined height here to stretch the background image for the entire view height */
+    /* auto is for width, this set it to the default width provided by the background image in assets */
+    background-size: auto 100vh;
+    height: 100vh;
+    
+    width: var(--img-size);
+}
+
+.shadow_container {
+    /* make it the same size as the background image*/
+    width: var(--img-size);
+
+    height: 11rem;
+
+    /* the .5 adds opacity to the background color */
+    background-color: rgba(0, 0 , 0, .5);
+    
+    /* position element of logo and text in the desired position*/
+    margin-top: 10rem;
+    
+    /* adds a bit more shadow to the top of the icon */
+    padding-top: 0.5rem;
+}
+
+.logo_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 100%;
+}
+
+.logo_container > img {
+    width: 128px;
+    height: auto;
+}
+
+.container {
+    margin-left: calc(var(--img-size));
+    overflow: hidden;
+}
+
+.quote-container {
+    width: 180%;
+    height: 300px;
+    background-color: #ededed;
+    padding-top: 4rem;
+    padding-left: 2rem;
+    line-height: 1.6rem;
+}
+
+.quote {
+    width: 40%;
+}
+
+.quote > h5 {
+    font-size: 20px;
+    padding-top: 3.5rem;
+}
